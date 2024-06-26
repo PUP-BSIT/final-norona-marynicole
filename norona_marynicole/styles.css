@@ -1,0 +1,125 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+}
+
+.container {
+  border: 2px solid #ccc;
+  text-align: center;
+  font-style: italic;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #fff;
+}
+
+.title,
+.goals,
+.opinion {
+  border: 2px solid #ccc;
+  text-align: center;
+  font-style: italic;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.forms {
+  display: grid;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+    "email name"
+    "age subject"
+    "smcopy ."
+    "message ."
+    "submit submit";
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #1890ff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+}
+
+.form button:hover {
+  background-color: #147cd3;
+}
+
+.picture {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #bbb;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+  border: 2px solid #bbb;
+}
+
+ul,
+ol {
+  text-align: left;
+  display: inline-block;
+  padding-left: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  max-width: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+li {
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .title {
+    font-size: 22px;
+  }
+}
